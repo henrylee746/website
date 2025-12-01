@@ -34,3 +34,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+Modifications:
+
+- dock.tsx classNames caused hydration mismatch (HTML pre-rendered on server differs from React's render on the client, the hydration) by creating a hashed styling scope <style jsx> - removing this and added the dock hover icon effects in globals.css
+
+- particles.tsx by default
