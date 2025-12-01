@@ -41,6 +41,24 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --animate-infinite-ribbon: infinite-ribbon var(--ribbon-duration) linear infinite;
+  --animate-infinite-ribbon-reverse: infinite-ribbon-reverse var(--ribbon-duration) linear infinite;
+  @keyframes infinite-ribbon {
+  0% {
+    transform: translateX(0);
+    }
+  100% {
+    transform: translateX(-100%);
+    }
+  }
+  @keyframes infinite-ribbon-reverse {
+  0% {
+    transform: translateX(-100%);
+    }
+  100% {
+    transform: translateX(0);
+    }
+  }
 }
 
 :root {

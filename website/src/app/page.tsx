@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Particles } from "@/components/ui/particles";
+import { InfiniteRibbon } from "@/components/ui/infinite-ribbon";
 
 export default function Home() {
   return (
@@ -17,11 +17,13 @@ export default function Home() {
           <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             To get started, edit the page.tsx file.
           </h1>
-          <div className="relative flex h-[400px] w-full items-center justify-center overflow-hidden rounded-md bg-neutral-950">
-            <Particles variant="snow" />
-            <span className="font-gilroy pointer-events-none bg-gradient-to-br from-white to-zinc-400 bg-clip-text py-2 text-4xl text-transparent">
-              Snow
-            </span>
+          <div className="relative flex h-[350px] w-[500px] items-center justify-center">
+            <InfiniteRibbon rotation={5} className="absolute">
+              Welcome to Henry's webpage!
+            </InfiniteRibbon>
+            <InfiniteRibbon reverse={true} rotation={-5}>
+              Welcome to Henry's webpage!
+            </InfiniteRibbon>
           </div>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
             Looking for a starting point or more instructions? Head over to{" "}
