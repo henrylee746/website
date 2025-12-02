@@ -22,6 +22,7 @@ const slugs = [
   "vite",
   "vitest",
   "strapi",
+  "tanstack",
 ];
 
 export function IconCloudTechnologies() {

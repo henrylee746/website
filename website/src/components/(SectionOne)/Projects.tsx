@@ -12,8 +12,8 @@ const TMDProject = () => {
   return (
     <ExpandableCard
       title="Team Metrics Dashboard"
-      src="https://cdn.badtz-ui.com/images/components/expandable-card/haunted-house.webp"
-      description="React/TypeScript, Supabase, Node.js/Express"
+      src="/tmd.png"
+      description="React/TypeScript, Supabase, Node.js/Express, TailwindCSS, shad-cn/ui"
       classNameExpanded="[&_h4]:text-black dark:[&_h4]:text-white [&_h4]:font-medium"
     >
       <Link href="https://github.com/henrylee746/team-metrics-dashboard">
@@ -63,7 +63,7 @@ const HealthAndFitnessProject = () => {
     <ExpandableCard
       title="Health and Fitness Management Tool"
       src="/fitness.png"
-      description="React/TypeScript, Next.js, PrismaORM"
+      description="React/TypeScript, Next.js, PrismaORM, shad-cn/ui, Tanstack Table"
       classNameExpanded="[&_h4]:text-black dark:[&_h4]:text-white [&_h4]:font-medium"
     >
       <Link href="https://github.com/henrylee746/COMP3005FP">
@@ -84,6 +84,7 @@ const HealthAndFitnessProject = () => {
         <li>Prisma ORM </li>
         <li>PostgreSQL</li>
         <li>TypeScript</li>
+        <li>shadcn/ui</li>
         <li>Server Components + API Routes</li>
       </ul>
     </ExpandableCard>

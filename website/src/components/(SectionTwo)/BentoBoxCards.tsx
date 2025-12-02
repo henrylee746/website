@@ -17,7 +17,7 @@ const features = [
     href: "/",
     cta: "Learn more",
     background: <IconCloudTechnologies />,
-    className: "flex-1",
+    className: "flex-1 min-w-[250px]",
   },
   {
     Icon: IoMdCheckmarkCircle,
@@ -27,7 +27,7 @@ const features = [
     href: "/",
     cta: "Learn more",
     background: <FileTree />,
-    className: "flex-1",
+    className: "flex-1 min-w-[250px]",
   },
   {
     Icon: FaPlaneDeparture,
@@ -43,7 +43,7 @@ const features = [
 
 const BentoBoxCards = () => {
   return (
-    <BentoGrid className="flex flex-wrap p-8">
+    <BentoGrid className="flex flex-col md:flex-row p-8">
       {features.map((feature) => (
         <BentoCard key={feature.name} {...feature} />
       ))}

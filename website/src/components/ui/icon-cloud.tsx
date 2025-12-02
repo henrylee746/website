@@ -318,7 +318,7 @@ export function IconCloud({ icons, images }: IconCloudProps) {
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseUp}
-      className="h-full w-full rounded-lg"
+      className="lg:h-full lg:w-full max-w-[100px] rounded-lg"
       aria-label="Interactive 3D Icon Cloud"
       role="img"
     />

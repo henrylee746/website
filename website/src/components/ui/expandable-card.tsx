@@ -172,7 +172,7 @@ export function ExpandableCard({
             <div className="flex flex-col">
               <motion.p
                 layoutId={`description-${description}-${id}`}
-                className="text-sm font-medium text-zinc-500 md:text-left dark:text-zinc-400"
+                className="text-sm font-medium text-zinc-500 md:text-left dark:text-zinc-400 mb-4"
               >
                 {description}
               </motion.p>
