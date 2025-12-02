@@ -4,9 +4,9 @@ import { FaBrain, FaPlaneDeparture } from "react-icons/fa";
 import { IoMdCheckmarkCircle } from "react-icons/io";
 
 /*Components*/
-import Map from "./(cardComponents)/Map";
 import { WorldGlobe } from "./(cardComponents)/Globe";
 import { IconCloudTechnologies } from "./(cardComponents)/Icons";
+import { FileTree } from "./(cardComponents)/FileTree";
 
 const features = [
   {
@@ -26,7 +26,7 @@ const features = [
       "Not just interested in web development, but the entire SDLC - from design to deployment",
     href: "/",
     cta: "Learn more",
-    background: <img className="absolute -top-20 -right-20 opacity-60" />,
+    background: <FileTree />,
     className: "flex-1",
   },
   {

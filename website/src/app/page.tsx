@@ -18,7 +18,7 @@ export default function Home() {
             <TechStackDock />
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-4 mt-6">
           <div className="flex flex-col items-center gap-4">
             <FadeUpWord
               as="h2"

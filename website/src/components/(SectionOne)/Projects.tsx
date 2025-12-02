@@ -12,7 +12,7 @@ const TMDProject = () => {
   return (
     <ExpandableCard
       title="Team Metrics Dashboard"
-      src="/tmd.png"
+      src="https://cdn.badtz-ui.com/images/components/expandable-card/haunted-house.webp"
       description="React/TypeScript, Supabase, Node.js/Express"
       classNameExpanded="[&_h4]:text-black dark:[&_h4]:text-white [&_h4]:font-medium"
     >
@@ -93,7 +93,7 @@ const HealthAndFitnessProject = () => {
 export function ProjectCards() {
   return (
     <div
-      className="grid grid-cols-1 md:grid-cols-2 gap-4 p-8
+      className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4
     "
     >
       <TMDProject />
