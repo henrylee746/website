@@ -109,7 +109,10 @@ const HealthAndFitnessProject = () => {
 
 export function ProjectCards() {
   return (
-    <div className="flex flex-col lg:flex-row gap-4">
+    <div
+      className="flex flex-wrap gap-4
+    "
+    >
       <TMDProject />
       <HealthAndFitnessProject />
     </div>

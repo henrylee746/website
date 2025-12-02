@@ -3,11 +3,11 @@ import TechStackDock from "@/components/TechStackDock";
 import { ProjectCards } from "@/components/Projects";
 import { BorderBeam } from "@/components/ui/border-beam";
 import { FadeUpWord } from "@/components/ui/fade-up-word";
-import { MarqueeDemo } from "@/components/WorkList";
+import { WorkList } from "@/components/WorkList";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen py-12 justify-center bg-zinc-50 font-sans dark:bg-black">
+    <div className="flex  min-h-screen py-12 justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex min-h-screen w-full flex-col items-center justify-between">
         <div className="flex flex-col items-center gap-6 text-center">
           <div className="relative overflow-hidden rounded-lg shadow-sm ">
@@ -16,12 +16,14 @@ export default function Home() {
               <FadeUpWord
                 as="h1"
                 className="max-w-md md:text-5xl lg:text-6xl font-semibold leading-15 tracking-tight text-black dark:text-zinc-50"
+                delay={0.1}
               >
                 This is Henry
               </FadeUpWord>
               <FadeUpWord
                 as="h2"
                 className="max-w-2xl md:text-2xl lg:text-3xl font-medium leading-10 tracking-tight text-black dark:text-zinc-50"
+                delay={0.1}
               >
                 CS @ Carleton & Full-Stack Development
               </FadeUpWord>
@@ -34,9 +36,27 @@ export default function Home() {
             <TechStackDock />
           </div>
         </div>
-        <div className="flex md:flex-col gap-4 mt-8 ">
-          <ProjectCards />
-          <MarqueeDemo />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-stretch">
+          <div className="flex flex-col items-center gap-4">
+            <FadeUpWord
+              as="h2"
+              className="max-w-2xl md:text-2xl lg:text-3xl font-medium leading-10 tracking-tight text-black dark:text-zinc-50"
+              delay={0.3}
+            >
+              Projects
+            </FadeUpWord>
+            <ProjectCards />
+          </div>
+          <div className="flex flex-col items-center gap-4">
+            <FadeUpWord
+              as="h2"
+              className="max-w-2xl md:text-2xl lg:text-3xl font-medium leading-10 tracking-tight text-black dark:text-zinc-50"
+              delay={0.3}
+            >
+              Work Experience + Testimonials
+            </FadeUpWord>
+            <WorkList />
+          </div>
         </div>
 
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">

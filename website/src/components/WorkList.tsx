@@ -2,32 +2,40 @@ import { Marquee } from "@/components/ui/marquee";
 
 const items = [
   {
-    name: "Emma Wilson",
-    title: "Product Designer, TechCorp",
+    name: "Kinaxis",
+    title: "Frontend Developer Intern",
     image:
-      "https://cdn.badtz-ui.com/images/components/avatar-proof/avatar-2.webp",
-    body: "This design system has transformed our workflow. The components are intuitive and well-documented.",
+      "https://media.licdn.com/dms/image/v2/D560BAQHPxAih-jGbCA/company-logo_200_200/company-logo_200_200/0/1711628731307/kinaxis_logo?e=1766016000&v=beta&t=Zs32ENKRFpEHPCbj36A4YVz6XUD12wLjd7Y_WPepdao",
+    body: `Incoming Jan. 2026`,
   },
   {
-    name: "Lucas Chen",
-    title: "Frontend Developer, WebFlow",
+    name: "Ericsson Canada",
+    title: "Software Developer Intern",
     image:
-      "https://cdn.badtz-ui.com/images/components/avatar-proof/avatar-1.webp",
-    body: "The components are well-structured and customizable. They've significantly reduced our development time.",
+      "https://media.licdn.com/dms/image/v2/D4E0BAQENqPbk40CTBA/company-logo_200_200/B4EZYffZaEG0AI-/0/1744285047948/ericsson_logo?e=1766016000&v=beta&t=o1LokjDHQC_EWS_Dc-xE8CTaUIv0zjWf-F7pkshQlno",
+    body: `
+      	Henry has been excellent.
+        When he presented the prototype of the team KPI tool,
+        it was well constructed and accomplished what was asked of him
+        during the first two terms. He took initiative and completed the task on time.
+    `,
   },
   {
-    name: "Sophia Martinez",
-    title: "UI/UX Lead, DesignHub",
+    name: "Carleton Blueprint",
+    title: "Tech Lead Developer",
     image:
-      "https://cdn.badtz-ui.com/images/components/avatar-proof/avatar-5.webp",
-    body: "Every component feels polished and professional. It's become our go-to resource for all projects.",
+      "https://media.licdn.com/dms/image/v2/C4D0BAQEJrZyBtVLe1Q/company-logo_200_200/company-logo_200_200/0/1630461528316/cublueprint_logo?e=1766016000&v=beta&t=2HOlmq30x0ufeHOqcECStV7foLhOZ4yVCrXdwEHyULw",
+    body: `Leading a student team delivering a full stack web application in Next.js for the Jamaican Ottawa Community Association`,
   },
   {
-    name: "Oliver Thompson",
-    title: "Creative Director, StudioX",
+    name: "House of Commons of Canada",
+    title: "Student Developer Co-Op",
     image:
-      "https://cdn.badtz-ui.com/images/components/avatar-proof/avatar-4.webp",
-    body: "This design system brings consistency and efficiency to our creative process. Beautiful and functional.",
+      "https://media.licdn.com/dms/image/v2/D560BAQGeD4TZFZdV6A/company-logo_200_200/company-logo_200_200/0/1719255458028/houseofcommons__logo?e=1766016000&v=beta&t=uZ8RMcBfLwv1jZCoV4n8yOQgmUHkyQulfeEfPBIMv0w",
+    body: `Overall, 
+    Henry has demonstrated that he can be
+    successful in this field. I would recommend him to other employers seeking a professional
+    and capable software developer.`,
   },
 ];
 
@@ -58,9 +66,9 @@ function TestimonialCard({ item }: { item: (typeof items)[number] }) {
   );
 }
 
-export function MarqueeDemo() {
+export function WorkList() {
   return (
-    <div className="relative max-w-[700px] overflow-hidden">
+    <div className="relative w-full overflow-hidden">
       <div className="from-background absolute inset-y-0 left-0 z-10 w-30 bg-gradient-to-r to-transparent" />
       <div className="from-background absolute inset-y-0 right-0 z-10 w-30 bg-gradient-to-l to-transparent" />
       <Marquee className="py-2" direction="left">

@@ -165,7 +165,7 @@ export function ExpandableCard({
             <img
               src={src}
               alt={title}
-              className="md:h-56 md:w-64 lg:h-72 lg:w-84 xl:h-96 xl:w-128 rounded-lg object-cover"
+              className="h-56 w-64 rounded-lg object-cover"
             />
           </motion.div>
           <div className="flex items-center justify-between">
