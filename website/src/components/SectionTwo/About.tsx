@@ -1,9 +1,8 @@
 import { BorderBeam } from "@/components/ui/border-beam";
 import { FadeUpWord } from "@/components/ui/fade-up-word";
-import { NumberTicker } from "@/components/ui/number-ticker";
+import { BlurReveal } from "@/components/ui/blur-reveal";
 import { TypingAnimation } from "@/components/ui/typing-animation";
-import { TextAnimate } from "@/components/ui/text-animate";
-import { RetroGridComponent } from "./(cardComponents)/RetroGrid";
+import { RetroGridComponent } from "./card-components/RetroGrid";
 import BentoBoxCards from "./BentoBoxCards";
 
 const About = () => {
@@ -24,11 +23,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row flex-wrap justify-center items-center gap-16">
-        <NumberTicker
-          value={100}
-          className="text-5xl font-medium tracking-tighter whitespace-pre-wrap text-black dark:text-white"
-        />
+      <div className="flex flex-col justify-center items-center gap-8">
         <TypingAnimation
           words={["📍Based in: Ottawa, Ontario, Canada"]}
           typeSpeed={60}
@@ -37,15 +32,14 @@ const About = () => {
           className="text-4xl font-bold"
         />
 
-        <TextAnimate
+        <BlurReveal
+          delay={0.2}
           className="text-2xl font-semibold p-4 text-center"
-          animation="blurInUp"
-          by="character"
-          delay={0.5}
         >
-          Currently Pursuing: Carleton University Honours Bachelor of Computer
-          Science
-        </TextAnimate>
+          Education: Honours Bachelor of Computer Science @ Carleton University
+          <br />
+          (Sep. 2022 - June 2027 expt.)
+        </BlurReveal>
       </div>
 
       <BentoBoxCards />

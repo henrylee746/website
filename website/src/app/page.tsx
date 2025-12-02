@@ -1,10 +1,11 @@
-import About from "@/components/(SectionTwo)/About";
-import TechStackDock from "@/components/(SectionOne)/TechStackDock";
-import { ProjectCards } from "@/components/(SectionOne)/Projects";
+import About from "@/components/SectionTwo/About";
+import TechStackDock from "@/components/SectionOne/TechStackDock";
+import { ProjectCards } from "@/components/SectionOne/Projects";
 import { FadeUpWord } from "@/components/ui/fade-up-word";
-import { WorkList } from "@/components/(SectionOne)/WorkList";
+import { WorkList } from "@/components/SectionOne/WorkList";
 import { Highlighter } from "@/components/ui/highlighter";
-import Intro from "@/components/(SectionOne)/Intro";
+import Intro from "@/components/SectionOne/Intro";
+import Contact from "@/components/SectionThree/Contact";
 
 export default function Home() {
   return (
@@ -44,6 +45,7 @@ export default function Home() {
           </div>
         </div>
         <About />
+        <Contact />
       </main>
     </div>
   );

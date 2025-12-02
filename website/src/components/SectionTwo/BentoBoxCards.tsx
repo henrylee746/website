@@ -4,9 +4,9 @@ import { FaBrain, FaPlaneDeparture } from "react-icons/fa";
 import { IoMdCheckmarkCircle } from "react-icons/io";
 
 /*Components*/
-import { WorldGlobe } from "./(cardComponents)/Globe";
-import { IconCloudTechnologies } from "./(cardComponents)/Icons";
-import { FileTree } from "./(cardComponents)/FileTree";
+import { WorldGlobe } from "./card-components/Globe";
+import { IconCloudTechnologies } from "./card-components/Icons";
+import { FileTree } from "./card-components/FileTree";
 
 const features = [
   {
@@ -23,7 +23,7 @@ const features = [
     Icon: IoMdCheckmarkCircle,
     name: "Well-Rounded",
     description:
-      "Not just interested in web development, but the entire SDLC - from design to deployment",
+      "Through various internships, I became not just interested in web dev, but the entire SDLC and full stack - from design to deployment",
     href: "/",
     cta: "Learn more",
     background: <FileTree />,

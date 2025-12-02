@@ -13,7 +13,7 @@ const Intro = () => {
         <div>
           <FadeUpWord
             as="h1"
-            className="max-w-md md:text-5xl lg:text-6xl font-semibold leading-15 tracking-tight text-black dark:text-zinc-50
+            className="max-w-md md:text-5xl mb-6 lg:text-6xl font-semibold leading-15 tracking-tight text-black dark:text-zinc-50
                 "
             delay={0.1}
           >
@@ -21,7 +21,7 @@ const Intro = () => {
           </FadeUpWord>
           <FadeUpWord
             as="h2"
-            className="max-w-3xl md:text-2xl lg:text-3xl font-medium leading-10 tracking-tight text-black dark:text-zinc-50"
+            className="max-w-3xl md:text-2xl lg:text-3xl font-medium leading-5 tracking-tight text-black dark:text-zinc-50"
             delay={0.1}
           >
             CS @ Carleton & Full-Stack Development
