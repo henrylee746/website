@@ -21,6 +21,13 @@ const items = [
     `,
   },
   {
+    name: "incubator13",
+    title: "Coding Workshop Leader Intern",
+    image:
+      "https://media.licdn.com/dms/image/v2/C560BAQGTcrcVimjfHg/company-logo_200_200/company-logo_200_200/0/1630617128057?e=1766016000&v=beta&t=1cPmvrRtmKM1dfVkhNEnKOcdZb3HVyRfRohRbCXGneQ",
+    body: `Engaged with incoming students, teaching programming fundamentals involving Java, HTML, JavaScript, and Python`,
+  },
+  {
     name: "Carleton Blueprint",
     title: "Tech Lead Developer",
     image:

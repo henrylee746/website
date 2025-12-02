@@ -1,5 +1,7 @@
 import { BorderBeam } from "@/components/ui/border-beam";
 import { FadeUpWord } from "@/components/ui/fade-up-word";
+import { Meteors } from "@/components/ui/meteors";
+
 import BentoBoxCards from "./BentoBoxCards";
 
 const About = () => {

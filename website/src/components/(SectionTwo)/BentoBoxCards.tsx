@@ -1,67 +1,49 @@
+/*UI components and Icons*/
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
-import {
-  BellIcon,
-  CalendarIcon,
-  FileTextIcon,
-  GlobeIcon,
-  InputIcon,
-} from "@radix-ui/react-icons";
+import { FaBrain, FaPlaneDeparture } from "react-icons/fa";
+import { IoMdCheckmarkCircle } from "react-icons/io";
+
+/*Components*/
+import Map from "./(cardComponents)/Map";
+import { WorldGlobe } from "./(cardComponents)/Globe";
+import { IconCloudTechnologies } from "./(cardComponents)/Icons";
+
 const features = [
   {
-    Icon: FileTextIcon,
-    name: "Save your files",
-    description: "We automatically save your files as you type.",
-    href: "/",
-    cta: "Learn more",
-    background: <img className="absolute -top-20 -right-20 opacity-60" />,
-    className:
-      "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3 md:col-start-1 md:col-end-2",
-  },
-  {
-    Icon: InputIcon,
-    name: "Full text search",
-    description: "Search through all your files in one place.",
-    href: "/",
-    cta: "Learn more",
-    background: <img className="absolute -top-20 -right-20 opacity-60" />,
-    className:
-      "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3 md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-2",
-  },
-  {
-    Icon: GlobeIcon,
-    name: "Multilingual",
-    description: "Supports 100+ languages and counting.",
-    href: "/",
-    cta: "Learn more",
-    background: <img className="absolute -top-20 -right-20 opacity-60" />,
-    className:
-      "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4 md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2",
-  },
-  {
-    Icon: CalendarIcon,
-    name: "Calendar",
-    description: "Use the calendar to filter your files by date.",
-    href: "/",
-    cta: "Learn more",
-    background: <img className="absolute -top-20 -right-20 opacity-60" />,
-    className:
-      "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2 md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3",
-  },
-  {
-    Icon: BellIcon,
-    name: "Notifications",
+    Icon: FaBrain,
+    name: "Eager to Learn",
     description:
-      "Get notified when someone shares a file or mentions you in a comment.",
+      "Always open-minded and eager to learn about emerging technologies. Above are some of the tools I've used in the past/currently.",
+    href: "/",
+    cta: "Learn more",
+    background: <IconCloudTechnologies />,
+    className: "flex-1",
+  },
+  {
+    Icon: IoMdCheckmarkCircle,
+    name: "Well-Rounded",
+    description:
+      "Not just interested in web development, but the entire SDLC - from design to deployment",
     href: "/",
     cta: "Learn more",
     background: <img className="absolute -top-20 -right-20 opacity-60" />,
-    className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4 ",
+    className: "flex-1",
+  },
+  {
+    Icon: FaPlaneDeparture,
+    name: "Avid Traveller",
+    description:
+      "Been to several countries, made memories with so many more. Above is a map of the various nationalities of people I've met while abroad.",
+    href: "/",
+    cta: "Learn more",
+    background: <WorldGlobe />,
+    className: "flex-1",
   },
 ];
 
 const BentoBoxCards = () => {
   return (
-    <BentoGrid className="lg:grid-rows-3 md:grid-cols-2 p-4">
+    <BentoGrid className="flex flex-wrap p-8">
       {features.map((feature) => (
         <BentoCard key={feature.name} {...feature} />
       ))}

@@ -3,8 +3,7 @@ import { ShimmerButton } from "@/components/ui/shimmer-button";
 import { FadeUpWord } from "@/components/ui/fade-up-word";
 import Link from "next/link";
 
-import { Github, FileText } from "lucide-react";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaFile } from "react-icons/fa";
 
 const Intro = () => {
   return (
@@ -31,12 +30,12 @@ const Intro = () => {
         <div className="flex gap-4">
           <Link href="https://github.com/henrylee746">
             <ShimmerButton className="shadow-2xl flex gap-2 items-center">
-              GitHub <Github />
+              GitHub <FaGithub />
             </ShimmerButton>
           </Link>
           <Link href="https://www.linkedin.com/in/hlee750/overlay/1764640946765/single-media-viewer/?profileId=ACoAAEED0voBXuSCrHDuOl2s_40ii8t6h5pOs6A">
             <ShimmerButton className="shadow-2xl flex gap-2 items-center">
-              Resume <FileText />
+              Resume <FaFile />
             </ShimmerButton>
           </Link>
           <Link href="https://www.linkedin.com/in/hlee750/">
