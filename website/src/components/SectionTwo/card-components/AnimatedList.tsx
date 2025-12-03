@@ -59,7 +59,7 @@ const Notification = ({ name, description, icon, color }: Item) => {
     >
       <div className="flex flex-row items-center gap-3">
         <div
-          className="flex size-10 items-center justify-center rounded-2xl"
+          className="flex size-10 md:size-14 items-center justify-center rounded-2xl"
           style={{
             backgroundColor: color,
           }}
@@ -68,9 +68,9 @@ const Notification = ({ name, description, icon, color }: Item) => {
         </div>
         <div className="flex flex-col overflow-hidden">
           <figcaption className="flex flex-row items-center text-lg font-medium whitespace-pre dark:text-white">
-            <span className="text-lg sm:text-xs">{name}</span>
+            <span className="xl:text-xl text-lg sm:text-md">{name}</span>
           </figcaption>
-          <p className="text-xs font-normal dark:text-white/60">
+          <p className="text-xs xl:text-lg lg:text-md font-normal dark:text-white/60">
             {description}
           </p>
         </div>

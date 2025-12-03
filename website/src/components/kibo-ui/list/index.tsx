@@ -147,6 +147,8 @@ export const ListProvider = ({
     modifiers={[restrictToVerticalAxis]}
     onDragEnd={onDragEnd}
   >
-    <div className={cn("flex size-full flex-col", className)}>{children}</div>
+    <div className={cn("flex size-full flex-col h-full", className)}>
+      {children}
+    </div>
   </DndContext>
 );
