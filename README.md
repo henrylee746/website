@@ -34,3 +34,7 @@ useEffect(() => {
 ```
 
 This condition will stop the animation when index reaches the last item. Removed the con'dn to allow infinite looping
+
+- When using Faker (Library to generate mock data), you want to use .seed to generate the same data on the server or client, otherwise hydration error
+
+- @dnd-kit generates different aria-describedby IDs on the server vs client also causing a hydration error, fixed by adding a isMounted state that starts false then runs true after the useEffect sets it to true. Finally, a loading placeholder runs during SSR, ensuring the IDs are rendered only on the client
