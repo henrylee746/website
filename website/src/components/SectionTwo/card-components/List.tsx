@@ -30,7 +30,7 @@ const users = Array.from({ length: 1 })
     image: faker.image.avatar(),
   }));
 
-const ProblemSolverListFeatures = Array.from({ length: 5 })
+const ProblemSolverListFeatures = Array.from({ length: 4 })
   .fill(null)
   .map(() => ({
     id: faker.string.uuid(),
