@@ -20,8 +20,8 @@ export default function Home() {
             <TechStackDock />
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-4 mt-6">
-          <div className="flex flex-col items-center gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-stretch gap-4 mt-6">
+          <div className="flex flex-col items-center justify-center gap-4">
             <FadeUpWord
               as="h2"
               className="max-w-2xl md:text-2xl lg:text-3xl font-medium leading-10 tracking-tight text-black dark:text-zinc-50"
@@ -31,7 +31,7 @@ export default function Home() {
             </FadeUpWord>
             <ProjectCards />
           </div>
-          <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center  justify-center gap-4">
             <FadeUpWord
               as="h2"
               className="max-w-2xl md:text-2xl lg:text-3xl font-medium leading-10 tracking-tight text-black dark:text-zinc-50 flex justify-center"

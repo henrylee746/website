@@ -8,7 +8,7 @@ import {
   KanbanHeader,
   KanbanProvider,
 } from "@/components/kibo-ui/kanban";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 faker.seed(120);
@@ -51,7 +51,6 @@ const shortDateFormatter = new Intl.DateTimeFormat("en-US", {
 });
 
 const BentoKanbanCard = () => {
-  const [features, setFeatures] = useState(exampleFeatures);
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -67,11 +66,7 @@ const BentoKanbanCard = () => {
   }
 
   return (
-    <KanbanProvider
-      columns={columns}
-      data={features}
-      onDataChange={setFeatures}
-    >
+    <KanbanProvider columns={columns} data={exampleFeatures}>
       {(column) => (
         <KanbanBoard id={column.id} key={column.id}>
           <KanbanHeader>
@@ -84,7 +79,7 @@ const BentoKanbanCard = () => {
             </div>
           </KanbanHeader>
           <KanbanCards id={column.id}>
-            {(feature: (typeof features)[number]) => (
+            {(feature: (typeof exampleFeatures)[number]) => (
               <KanbanCard
                 column={column.id}
                 id={feature.id}
