@@ -11,7 +11,7 @@ import {
 import { useState, useEffect } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
-faker.seed(111);
+faker.seed(120);
 
 const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
 
@@ -28,7 +28,7 @@ const users = Array.from({ length: 2 })
     image: faker.image.avatar(),
   }));
 
-const exampleFeatures = Array.from({ length: 5 })
+const exampleFeatures = Array.from({ length: 4 })
   .fill(null)
   .map(() => ({
     id: faker.string.uuid(),
