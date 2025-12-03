@@ -30,17 +30,26 @@ const Intro = () => {
         </div>
         <div className="flex flex-col md:flex-row gap-4">
           <Link href="https://github.com/henrylee746">
-            <ShimmerButton className="shadow-2xl flex gap-2 items-center">
+            <ShimmerButton
+              className="shadow-2xl flex gap-1.5 items-center"
+              shimmerSize="0.03em"
+            >
               GitHub <FaGithub />
             </ShimmerButton>
           </Link>
           <Link href="https://bitter-sunset-340.linkyhost.com/">
-            <ShimmerButton className="shadow-2xl flex gap-2 items-center">
+            <ShimmerButton
+              className="shadow-2xl flex gap-1.5 items-center"
+              shimmerSize="0.03em"
+            >
               Resume <IoIosPaper />
             </ShimmerButton>
           </Link>
           <Link href="https://www.linkedin.com/in/hlee750/">
-            <ShimmerButton className="shadow-2xl flex gap-2 items-center">
+            <ShimmerButton
+              className="shadow-2xl flex gap-1.5 items-center"
+              shimmerSize="0.03em"
+            >
               LinkedIn <FaLinkedin />
             </ShimmerButton>
           </Link>
