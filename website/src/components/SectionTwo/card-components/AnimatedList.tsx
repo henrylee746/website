@@ -79,7 +79,7 @@ const Notification = ({ name, description, icon, color }: Item) => {
   );
 };
 
-export function AnimatedListDemo({ className }: { className?: string }) {
+export function ToolsList({ className }: { className?: string }) {
   return (
     <div
       className={cn(
