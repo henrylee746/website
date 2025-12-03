@@ -1,5 +1,5 @@
 import { ExpandableCard } from "@/components/ui/expandable-card";
-import { GradientSlideButton } from "@/components/ui/gradient-slide-button";
+import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
 import Link from "next/link";
 
 export function TypographyBlockquote({ content }: { content: string }) {
@@ -17,9 +17,9 @@ const TMDProject = () => {
       classNameExpanded="[&_h4]:text-black dark:[&_h4]:text-white [&_h4]:font-medium"
     >
       <Link href="https://github.com/henrylee746/team-metrics-dashboard">
-        <GradientSlideButton className="rounded-3xl cursor-pointer">
+        <InteractiveHoverButton className="rounded-3xl cursor-pointer">
           Link to GitHub Repo
-        </GradientSlideButton>
+        </InteractiveHoverButton>
       </Link>
 
       <h4>Inspiration</h4>
@@ -67,9 +67,9 @@ const HealthAndFitnessProject = () => {
       classNameExpanded="[&_h4]:text-black dark:[&_h4]:text-white [&_h4]:font-medium"
     >
       <Link href="https://github.com/henrylee746/COMP3005FP">
-        <GradientSlideButton className="rounded-3xl cursor-pointer">
+        <InteractiveHoverButton className="rounded-3xl cursor-pointer">
           Link to GitHub Repo
-        </GradientSlideButton>
+        </InteractiveHoverButton>
       </Link>
       <h4>Built with Next.js, Prisma ORM, and PostgreSQL</h4>
       <p>
