@@ -65,7 +65,7 @@ export const KanbanCard = <T extends KanbanItemProps = KanbanItemProps>({
   className,
 }: KanbanCardProps<T>) => {
   return (
-    <Card className={cn("gap-4 rounded-md p-1.5 shadow-sm", className)}>
+    <Card className={cn("gap-4 rounded-md p-1.5 shadow-sm ", className)}>
       {children ?? <p className="m-0 font-medium text-sm">{name}</p>}
     </Card>
   );
@@ -88,7 +88,7 @@ export const KanbanCards = <T extends KanbanItemProps = KanbanItemProps>({
   return (
     <ScrollArea className="overflow-hidden">
       <div
-        className={cn("flex flex-grow flex-col gap-2 p-2", className)}
+        className={cn("flex flex-grow flex-col gap-2 p-2 ", className)}
         {...props}
       >
         {filteredData.map(children)}
@@ -127,7 +127,7 @@ export const KanbanProvider = <
     <KanbanContext.Provider value={{ columns, data }}>
       <div
         className={cn(
-          "grid size-full auto-cols-fr grid-flow-col gap-4",
+          "grid size-full auto-cols-fr grid-flow-col gap-4 ",
           className
         )}
       >

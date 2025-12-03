@@ -4,8 +4,7 @@ const items = [
   {
     name: "Ericsson Canada",
     title: "Software Developer Intern",
-    image:
-      "https://media.licdn.com/dms/image/v2/D4E0BAQENqPbk40CTBA/company-logo_200_200/B4EZYffZaEG0AI-/0/1744285047948/ericsson_logo?e=1766016000&v=beta&t=o1LokjDHQC_EWS_Dc-xE8CTaUIv0zjWf-F7pkshQlno",
+    image: "/ericsson.jpg",
     body: `
       	Henry has been excellent.
         When he presented the prototype of the team KPI tool,
@@ -16,22 +15,19 @@ const items = [
   {
     name: "incubator13",
     title: "Coding Workshop Leader Intern",
-    image:
-      "https://media.licdn.com/dms/image/v2/C560BAQGTcrcVimjfHg/company-logo_200_200/company-logo_200_200/0/1630617128057?e=1766016000&v=beta&t=1cPmvrRtmKM1dfVkhNEnKOcdZb3HVyRfRohRbCXGneQ",
+    image: "/incubator.jpg",
     body: `Engaged with incoming students, teaching programming fundamentals involving Java, HTML, JavaScript, and Python`,
   },
   {
     name: "Carleton Blueprint",
     title: "Tech Lead Developer",
-    image:
-      "https://media.licdn.com/dms/image/v2/C4D0BAQEJrZyBtVLe1Q/company-logo_200_200/company-logo_200_200/0/1630461528316/cublueprint_logo?e=1766016000&v=beta&t=2HOlmq30x0ufeHOqcECStV7foLhOZ4yVCrXdwEHyULw",
+    image: "/cublueprint.jpg",
     body: `Well done to Henry for being able to learn a whole new CMS in short time for the purpose of this project (Strapi)👏`,
   },
   {
     name: "House of Commons of Canada",
     title: "Student Developer Co-Op",
-    image:
-      "https://media.licdn.com/dms/image/v2/D560BAQGeD4TZFZdV6A/company-logo_200_200/company-logo_200_200/0/1719255458028/houseofcommons__logo?e=1766016000&v=beta&t=uZ8RMcBfLwv1jZCoV4n8yOQgmUHkyQulfeEfPBIMv0w",
+    image: "/hoc.jpg",
     body: `Overall, 
     Henry has demonstrated that he can be
     successful in this field. I would recommend him to other employers seeking a professional

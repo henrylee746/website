@@ -18,8 +18,7 @@ const items = [
   {
     name: "Kinaxis - Incoming Jan. 2026",
     title: "Frontend Developer Intern",
-    image:
-      "https://media.licdn.com/dms/image/v2/D560BAQHPxAih-jGbCA/company-logo_200_200/company-logo_200_200/0/1711628731307/kinaxis_logo?e=1766016000&v=beta&t=Zs32ENKRFpEHPCbj36A4YVz6XUD12wLjd7Y_WPepdao",
+    image: "/kinaxis.jpg",
     body: `TypeScript, Unit/E2E Testing, CSS, REST APIs`,
     startAt: "2026-01-12",
     endAt: "N/A",
@@ -27,8 +26,7 @@ const items = [
   {
     name: "Carleton Blueprint",
     title: "Tech Lead Developer",
-    image:
-      "https://media.licdn.com/dms/image/v2/C4D0BAQEJrZyBtVLe1Q/company-logo_200_200/company-logo_200_200/0/1630461528316/cublueprint_logo?e=1766016000&v=beta&t=2HOlmq30x0ufeHOqcECStV7foLhOZ4yVCrXdwEHyULw",
+    image: "/cublueprint.jpg",
     body: `Next.js/TypeScript, Strapi, BetterAuth.js, GraphQL, GitHub Projects`,
     startAt: "2025-10-01",
     endAt: "Present",
@@ -36,8 +34,7 @@ const items = [
   {
     name: "House of Commons of Canada - MOP Team",
     title: "Student Developer Co-Op",
-    image:
-      "https://media.licdn.com/dms/image/v2/D560BAQGeD4TZFZdV6A/company-logo_200_200/company-logo_200_200/0/1719255458028/houseofcommons__logo?e=1766016000&v=beta&t=uZ8RMcBfLwv1jZCoV4n8yOQgmUHkyQulfeEfPBIMv0w",
+    image: "/hoc.jpg",
     body: ` 
    ServiceNow, Azure DevOps, HTML/CSS, JavaScript, Git, Agile`,
     startAt: "2025-09-15",
@@ -46,8 +43,7 @@ const items = [
   {
     name: "Ericsson Canada",
     title: "Software Developer Intern",
-    image:
-      "https://media.licdn.com/dms/image/v2/D4E0BAQENqPbk40CTBA/company-logo_200_200/B4EZYffZaEG0AI-/0/1744285047948/ericsson_logo?e=1766016000&v=beta&t=o1LokjDHQC_EWS_Dc-xE8CTaUIv0zjWf-F7pkshQlno",
+    image: "/ericsson.jpg",
     body: `
  React/JavaScript, Python, Node.js, Express, shadcn-ui/TailwindCSS   
     `,
@@ -57,8 +53,7 @@ const items = [
   {
     name: "House of Commons of Canada - Accreditation Team",
     title: "Student Developer Co-Op",
-    image:
-      "https://media.licdn.com/dms/image/v2/D560BAQGeD4TZFZdV6A/company-logo_200_200/company-logo_200_200/0/1719255458028/houseofcommons__logo?e=1766016000&v=beta&t=uZ8RMcBfLwv1jZCoV4n8yOQgmUHkyQulfeEfPBIMv0w",
+    image: "/hoc.jpg",
     body: `ServiceNow, Azure DevOps, HTML/CSS, JavaScript, Git, Agile`,
     startAt: "2024-01-08",
     endAt: "2024-04-26",
@@ -66,8 +61,7 @@ const items = [
   {
     name: "Carleton University",
     title: "Undergrad Teaching Assistant",
-    image:
-      "https://media.licdn.com/dms/image/v2/D4E0BAQHUpxkQqIkqfA/company-logo_200_200/company-logo_200_200/0/1664807688674/carleton_university_logo?e=1766620800&v=beta&t=rPiX7KguWjQtjEWa31xlzKcOUW_bTezCddS81Su6fJc",
+    image: "/carleton.jpg",
     body: ` 
    Calculus Concepts, Communication, Leadership`,
     startAt: "2023-09-04",
@@ -76,8 +70,7 @@ const items = [
   {
     name: "incubator13 - Coding Workshop Leader Intern",
     title: "Coding Workshop Leader Intern",
-    image:
-      "https://media.licdn.com/dms/image/v2/C560BAQGTcrcVimjfHg/company-logo_200_200/company-logo_200_200/0/1630617128057?e=1766016000&v=beta&t=1cPmvrRtmKM1dfVkhNEnKOcdZb3HVyRfRohRbCXGneQ",
+    image: "/incubator.jpg",
     body: `HTML, JavaScript, Python`,
     startAt: "2023-05-21",
     endAt: "2023-09-04",
