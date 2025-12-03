@@ -7,6 +7,8 @@ import BentoBoxCards from "./BentoBoxCards";
 import WorkExpTable from "./Table";
 import { ShinyButton } from "@/components/ui/shiny-button";
 import { Highlighter } from "@/components/ui/highlighter";
+import { Separator } from "@/components/ui/separator";
+
 import Link from "next/link";
 
 const About = () => {
@@ -42,6 +44,8 @@ const About = () => {
           🏫 Education: Honours Bachelor of Computer Science @ Carleton
           University (Sep. 2022 - June 2027 expt.)
         </BlurReveal>
+        <Separator orientation="horizontal" className="w-[75%]" />
+
         <BlurReveal
           delay={0.6}
           className="flex gap-3 text-2xl font-semibold p-4 text-center"
@@ -59,8 +63,11 @@ const About = () => {
       </div>
       <WorkExpTable />
       <Link href="https://bitter-sunset-340.linkyhost.com">
-        <ShinyButton className="mt-4">Click to see Resume</ShinyButton>
+        <ShinyButton className="my-6">
+          <span className="font-semibold">Click to see Resume</span>
+        </ShinyButton>
       </Link>
+      <Separator orientation="horizontal" />
 
       <BentoBoxCards />
       <RetroGridComponent />
