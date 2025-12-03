@@ -2,13 +2,6 @@ import { Marquee } from "@/components/ui/marquee";
 
 const items = [
   {
-    name: "Kinaxis",
-    title: "Frontend Developer Intern",
-    image:
-      "https://media.licdn.com/dms/image/v2/D560BAQHPxAih-jGbCA/company-logo_200_200/company-logo_200_200/0/1711628731307/kinaxis_logo?e=1766016000&v=beta&t=Zs32ENKRFpEHPCbj36A4YVz6XUD12wLjd7Y_WPepdao",
-    body: `Incoming Jan. 2026`,
-  },
-  {
     name: "Ericsson Canada",
     title: "Software Developer Intern",
     image:
@@ -32,7 +25,7 @@ const items = [
     title: "Tech Lead Developer",
     image:
       "https://media.licdn.com/dms/image/v2/C4D0BAQEJrZyBtVLe1Q/company-logo_200_200/company-logo_200_200/0/1630461528316/cublueprint_logo?e=1766016000&v=beta&t=2HOlmq30x0ufeHOqcECStV7foLhOZ4yVCrXdwEHyULw",
-    body: `Leading a student team delivering a full stack web application in Next.js for the Jamaican Ottawa Community Association`,
+    body: `Well done to Henry for being able to learn a whole new CMS in short time for the purpose of this project (Strapi)👏`,
   },
   {
     name: "House of Commons of Canada",

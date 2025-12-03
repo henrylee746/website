@@ -37,8 +37,6 @@ import { cn } from "@/lib/utils";
 
 export type { ColumnDef } from "@tanstack/react-table";
 
-const sortingAtom = atom<SortingState>([]);
-
 export const TableContext = createContext<{
   data: unknown[];
   columns: ColumnDef<unknown, unknown>[];
@@ -62,21 +60,10 @@ export function TableProvider<TData, TValue>({
   children,
   className,
 }: TableProviderProps<TData, TValue>) {
-  const [sorting, setSorting] = useAtom(sortingAtom);
   const table = useReactTable({
     data,
     columns,
     getCoreRowModel: getCoreRowModel(),
-    getSortedRowModel: getSortedRowModel(),
-    onSortingChange: (updater) => {
-      // @ts-expect-error updater is a function that returns a sorting object
-      const newSorting = updater(sorting);
-
-      setSorting(newSorting);
-    },
-    state: {
-      sorting,
-    },
   });
 
   return (
@@ -147,49 +134,9 @@ export function TableColumnHeader<TData, TValue>({
   title,
   className,
 }: TableColumnHeaderProps<TData, TValue>) {
-  // Extract inline event handlers to prevent unnecessary re-renders
-  const handleSortAsc = useCallback(() => {
-    column.toggleSorting(false);
-  }, [column]);
-
-  const handleSortDesc = useCallback(() => {
-    column.toggleSorting(true);
-  }, [column]);
-
-  if (!column.getCanSort()) {
-    return <div className={cn(className)}>{title}</div>;
-  }
-
   return (
     <div className={cn("flex items-center space-x-2", className)}>
-      <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <Button
-            className="-ml-3 h-8 data-[state=open]:bg-accent"
-            size="sm"
-            variant="ghost"
-          >
-            <span>{title}</span>
-            {column.getIsSorted() === "desc" ? (
-              <ArrowDownIcon className="ml-2 h-4 w-4" />
-            ) : column.getIsSorted() === "asc" ? (
-              <ArrowUpIcon className="ml-2 h-4 w-4" />
-            ) : (
-              <ChevronsUpDownIcon className="ml-2 h-4 w-4" />
-            )}
-          </Button>
-        </DropdownMenuTrigger>
-        <DropdownMenuContent align="start">
-          <DropdownMenuItem onClick={handleSortAsc}>
-            <ArrowUpIcon className="mr-2 h-3.5 w-3.5 text-muted-foreground/70" />
-            Asc
-          </DropdownMenuItem>
-          <DropdownMenuItem onClick={handleSortDesc}>
-            <ArrowDownIcon className="mr-2 h-3.5 w-3.5 text-muted-foreground/70" />
-            Desc
-          </DropdownMenuItem>
-        </DropdownMenuContent>
-      </DropdownMenu>
+      <span>{title}</span>
     </div>
   );
 }
