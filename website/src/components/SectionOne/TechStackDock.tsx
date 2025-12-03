@@ -41,7 +41,8 @@ export default function TechStackDock() {
   ];
 
   return (
-    <Dock>
+    <Dock className="max-w-[300px] sm:max-w-none">
+      {" "}
       {dockItems.map((item, index) => (
         <DockIcon
           key={index}

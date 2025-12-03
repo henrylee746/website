@@ -230,7 +230,7 @@ export const Terminal = ({
     <div
       ref={containerRef}
       className={cn(
-        "border-border bg-background z-0 h-full max-h-[350px] w-full max-w-lg rounded-xl border m-4 z-10",
+        "border-border bg-background z-0 h-full max-h-[350px] w-full max-w-lg rounded-xl border m-4 z-10 ",
         className
       )}
     >

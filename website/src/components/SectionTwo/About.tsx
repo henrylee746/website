@@ -5,6 +5,8 @@ import { TypingAnimation } from "@/components/ui/typing-animation";
 import { RetroGridComponent } from "./card-components/RetroGrid";
 import BentoBoxCards from "./BentoBoxCards";
 import WorkExpTable from "./Table";
+import { ShinyButton } from "@/components/ui/shiny-button";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -47,6 +49,10 @@ const About = () => {
         </BlurReveal>
       </div>
       <WorkExpTable />
+      <Link href="https://www.linkedin.com/in/hlee750/overlay/1764640946765/single-media-viewer/?profileId=ACoAAEED0voBXuSCrHDuOl2s_40ii8t6h5pOs6A">
+        <ShinyButton className="mt-4">Click to see Resume</ShinyButton>
+      </Link>
+
       <BentoBoxCards />
       <RetroGridComponent />
     </>

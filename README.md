@@ -19,3 +19,18 @@ which was covering the entire page and blocking mouse interactions. Modified to 
 - In MagicUI's animated list, you can adjust the spring animation by changing the stiffness/damping:
   Stiffness changes the speed/snappiness of the next card that pops in. Higher = faster/snappier
   Damping slows down the animation the higher it goes
+
+  In addition, there is a condition under this effect:
+
+```bash
+useEffect(() => {
+    if (index < childrenArray.length - 1) #the cond'n
+      const timeout = setTimeout(() => {
+        setIndex((prevIndex) => (prevIndex + 1) % childrenArray.length);
+      }, delay);
+
+      return () => clearTimeout(timeout);
+    }, [index, delay, childrenArray.length]);
+```
+
+This condition will stop the animation when index reaches the last item. Removed the con'dn to allow infinite looping

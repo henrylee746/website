@@ -22,6 +22,8 @@ export function ContactTerminal() {
         <span className="pl-2">- Next.js/TypeScript</span>
         <span className="pl-2">- BadtzUI</span>
         <span className="pl-2">- MagicUI</span>
+        <span className="pl-2">- KiboUI</span>
+
         <span className="pl-2">- React-Icons</span>
         <span className="pl-2">- Simple-Icons</span>
         <span className="pl-2">- TailwindCSS</span>

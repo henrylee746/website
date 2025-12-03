@@ -1,12 +1,12 @@
 /*UI components and Icons*/
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
-import { FaBrain, FaPlaneDeparture } from "react-icons/fa";
+import { FaBrain } from "react-icons/fa";
 import { IoMdCheckmarkCircle } from "react-icons/io";
+import { FaPuzzlePiece } from "react-icons/fa";
 
 /*Components*/
-import { WorldGlobe } from "./card-components/Globe";
+import BentoKanbanCard from "./card-components/Kanban";
 import { IconCloudTechnologies } from "./card-components/Icons";
-import { AnimatedList } from "../ui/animated-list";
 import { AnimatedListDemo } from "./card-components/AnimantedList";
 
 const features = [
@@ -24,27 +24,27 @@ const features = [
     Icon: IoMdCheckmarkCircle,
     name: "Exposure to various tools",
     description:
-      "Through various internships, I became not just interested in React and Next.js, but the entire SDLC and full stack - from design to deployment",
+      "Through various internships and studies, I became not just interested in webpages, but the entire SDLC and full stack - from design to deployment.",
     href: "/",
     cta: "Learn more",
     background: <AnimatedListDemo />,
     className: "flex-1 ",
   },
   {
-    Icon: FaPlaneDeparture,
-    name: "Avid Traveller",
+    Icon: FaPuzzlePiece, // or FaLightbulb, FaCode
+    name: "Problem Solver",
     description:
-      "Been to several countries, made memories with so many more. Above is a map of the various nationalities of people I've met while abroad.",
+      "I enjoy breaking down complex challenges into manageable solutions, whether it's debugging a tricky bug or architecting a scalable system.",
     href: "/",
     cta: "Learn more",
-    background: <WorldGlobe />,
+    background: <BentoKanbanCard />,
     className: "flex-1",
   },
 ];
 
 const BentoBoxCards = () => {
   return (
-    <BentoGrid className="flex flex-col md:flex-row p-8">
+    <BentoGrid className="flex flex-col lg:flex-row p-8">
       {features.map((feature) => (
         <BentoCard key={feature.name} {...feature} />
       ))}

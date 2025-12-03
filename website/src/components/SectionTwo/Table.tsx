@@ -12,6 +12,7 @@ import {
   TableProvider,
   TableRow,
 } from "@/components/kibo-ui/table";
+import { ChevronRightIcon } from "lucide-react";
 
 const items = [
   {
@@ -33,7 +34,7 @@ const items = [
     endAt: "Present",
   },
   {
-    name: "House of Commons of Canada - Members of Parliament Onboarding Application",
+    name: "House of Commons of Canada - MOP Team",
     title: "Student Developer Co-Op",
     image:
       "https://media.licdn.com/dms/image/v2/D560BAQGeD4TZFZdV6A/company-logo_200_200/company-logo_200_200/0/1719255458028/houseofcommons__logo?e=1766016000&v=beta&t=uZ8RMcBfLwv1jZCoV4n8yOQgmUHkyQulfeEfPBIMv0w",
@@ -63,8 +64,8 @@ const items = [
     endAt: "2024-04-26",
   },
   {
-    name: "Carleton University - Undergrad Teaching Assistant",
-    title: "Student Developer Co-Op",
+    name: "Carleton University",
+    title: "Undergrad Teaching Assistant",
     image:
       "https://media.licdn.com/dms/image/v2/D4E0BAQHUpxkQqIkqfA/company-logo_200_200/company-logo_200_200/0/1664807688674/carleton_university_logo?e=1766620800&v=beta&t=rPiX7KguWjQtjEWa31xlzKcOUW_bTezCddS81Su6fJc",
     body: ` 
@@ -83,24 +84,25 @@ const items = [
   },
 ];
 
-const users = items.map((item, index) => ({
+const companies = items.map((item, index) => ({
   id: index,
   name: item.name,
   image: item.image,
 }));
 
-const exampleProducts = items.map((item, index) => ({
+const descriptions = items.map((item, index) => ({
   id: index,
   name: item.body,
 }));
 
 const exampleFeatures = items.map((item, index) => ({
   id: index,
+  title: item.title,
   name: item.name,
   startAt: item.startAt,
   endAt: item.endAt,
-  owner: users[index],
-  product: exampleProducts[index],
+  company: companies[index],
+  description: descriptions[index],
 }));
 
 const WorkExpTable = () => {
@@ -114,16 +116,19 @@ const WorkExpTable = () => {
         <div className="flex items-center gap-2">
           <div className="relative">
             <Avatar className="size-6">
-              <AvatarImage src={row.original.owner.image} />
+              <AvatarImage src={row.original.company.image} />
               <AvatarFallback>
-                {row.original.owner.name?.slice(0, 2)}
+                {row.original.company.name?.slice(0, 2)}
               </AvatarFallback>
             </Avatar>
           </div>
           <div>
             <span className="font-medium">{row.original.name}</span>
             <div className="flex items-center gap-1 text-muted-foreground text-xs">
-              <span>{row.original.product.name}</span>
+              <span>{row.original.title}</span>
+
+              <ChevronRightIcon size={12} />
+              <span>{row.original.description.name}</span>
             </div>
           </div>
         </div>
