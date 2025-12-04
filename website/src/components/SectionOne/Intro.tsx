@@ -14,11 +14,11 @@ const Intro = () => {
     <>
       <div className="relative overflow-hidden rounded-lg shadow-sm">
         <BorderBeam lightColor="#FF2056" lightWidth={350} duration={8} />
-        <div className="h-full w-screen p-8 md:px-8 lg:px-10 flex gap-4 justify-between items-center">
+        <div className="h-full w-screen mx-4 p-8 md:px-8 lg:px-10 flex gap-4 justify-between items-center">
           <div>
             <FadeUpWord
               as="h1"
-              className="max-w-md md:text-5xl mb-8 lg:text-6xl font-semibold leading-5 tracking-tight text-black dark:text-zinc-50
+              className="max-w-md text-2xl sm:text-3xl md:text-5xl lg:text-6xl mb-8 lg:text-6xl font-semibold leading-5 tracking-tight text-black dark:text-zinc-50
                 "
               delay={0.1}
             >
@@ -26,7 +26,7 @@ const Intro = () => {
             </FadeUpWord>
             <FadeUpWord
               as="h2"
-              className="max-w-3xl md:text-2xl lg:text-3xl font-medium leading-5 tracking-tight text-black dark:text-zinc-50"
+              className="max-w-3xl text-xl sm:text-lg md:text-2xl lg:text-3xl font-medium leading-5 tracking-tight text-black dark:text-zinc-50"
               delay={0.1}
             >
               CS @ Carleton & Full-Stack Development
@@ -35,17 +35,19 @@ const Intro = () => {
           <div className="flex flex-col xl:flex-row justify-center items-center gap-4">
             <Link href="https://github.com/henrylee746">
               <ShimmerButton className="shadow-2xl flex gap-1.5 items-center">
-                GitHub <FaGithub />
+                <span className="text-xs sm:text-md">GitHub</span> <FaGithub />
               </ShimmerButton>
             </Link>
             <Link href="https://icy-morning-122.linkyhost.com">
               <ShimmerButton className="shadow-2xl flex gap-1.5 items-center">
-                Resume <IoIosPaper />
+                <span className="text-xs sm:text-md">Resume</span>{" "}
+                <IoIosPaper />
               </ShimmerButton>
             </Link>
             <Link href="https://www.linkedin.com/in/hlee750/">
               <ShimmerButton className="shadow-2xl flex gap-1.5 items-center">
-                LinkedIn <FaLinkedin />
+                <span className="text-xs sm:text-md">LinkedIn</span>{" "}
+                <FaLinkedin />
               </ShimmerButton>
             </Link>
           </div>
