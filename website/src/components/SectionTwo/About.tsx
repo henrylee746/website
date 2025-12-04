@@ -5,11 +5,11 @@ import { TypingAnimation } from "@/components/ui/typing-animation";
 import { RetroGridComponent } from "./card-components/RetroGrid";
 import BentoBoxCards from "./BentoBoxCards";
 import WorkExpTable from "./Table";
-import { ShinyButton } from "@/components/ui/shiny-button";
 import { Highlighter } from "@/components/ui/highlighter";
 import { Separator } from "@/components/ui/separator";
 
 import Link from "next/link";
+import { ResumeLinkPreview } from "./ResumeLinkPreview";
 
 const About = () => {
   return (
@@ -62,11 +62,8 @@ const About = () => {
         </BlurReveal>
       </div>
       <WorkExpTable />
-      <Link href="https://icy-morning-122.linkyhost.com">
-        <ShinyButton className="my-6">
-          <span className="font-semibold">Resume</span>
-        </ShinyButton>
-      </Link>
+      <ResumeLinkPreview />
+
       <Separator orientation="horizontal" />
 
       <BentoBoxCards />

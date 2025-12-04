@@ -29,16 +29,19 @@ const Intro = () => {
           <div className="flex flex-col xl:flex-row justify-center items-center gap-4">
             <Link href="https://github.com/henrylee746">
               <ShimmerButton className="shadow-2xl flex gap-1.5 items-center">
+                <span className="text-xs sm:text-md md:text-lg">GitHub</span>{" "}
                 <FaGithub />
               </ShimmerButton>
             </Link>
             <Link href="https://icy-morning-122.linkyhost.com">
               <ShimmerButton className="shadow-2xl flex gap-1.5 items-center">
+                <span className="text-xs sm:text-md md:text-lg">Resume</span>{" "}
                 <IoIosPaper />
               </ShimmerButton>
             </Link>
             <Link href="https://www.linkedin.com/in/hlee750/">
               <ShimmerButton className="shadow-2xl flex gap-1.5 items-center">
+                <span className="text-xs sm:text-md md:text-lg">LinkedIn</span>{" "}
                 <FaLinkedin />
               </ShimmerButton>
             </Link>
