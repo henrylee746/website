@@ -1,9 +1,9 @@
+### Welcome to my Portfolio!
 
-### Welcome to my Portfolio! 
-
-You can find my background, experience, projects, and learn a bit more about me here. 
+You can find my background, experience, projects, and learn a bit more about me here.
 
 ## Built With 🛠️
+
 - Next.js 16/TypeScript
 - React 19
 - TailwindCSS 4
@@ -11,5 +11,5 @@ You can find my background, experience, projects, and learn a bit more about me 
 - Jotai for state management
 - Tanstack Table
 - Faker.js for mock data generation
-- shadcn-UI, Radix-UI, Motion for React
+- shadcn-UI, Radix-UI, Framer-Motion for React
 - React-Icons, Lucide-React, Simple Icons
