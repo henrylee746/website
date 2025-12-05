@@ -3,7 +3,6 @@ import React from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 import {
   Tooltip,
   TooltipContent,
@@ -82,7 +81,7 @@ export default function TechStackDock() {
   return (
     <div className="flex items-center justify-center">
       <TooltipProvider>
-        <Dock direction="middle">
+        <Dock direction="middle" iconSize={40}>
           {DATA.frontend.map((item) => (
             <DockIcon key={item.name}>
               <Tooltip>
@@ -104,7 +103,6 @@ export default function TechStackDock() {
               </Tooltip>
             </DockIcon>
           ))}
-          <Separator orientation="vertical" className="h-full" />
           {DATA.backend.map((item) => (
             <DockIcon key={item.name}>
               <Tooltip>

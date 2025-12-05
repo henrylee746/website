@@ -1,14 +1,9 @@
 import { BorderBeam } from "@/components/ui/border-beam";
-import { ShimmerButton } from "@/components/ui/shimmer-button";
 import { FadeUpWord } from "@/components/ui/fade-up-word";
 import TechStackDock from "@/components/SectionOne/TechStackDock";
 import { NameTextFlip } from "@/components/SectionOne/NameTextFlip";
-
-import Link from "next/link";
-
-import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { IoIosPaper } from "react-icons/io";
 import { TextGenerateEffectDock } from "./TextGenerate";
+import SocialLinksDock from "./SocialLinksDock";
 
 const Intro = () => {
   return (
@@ -24,28 +19,9 @@ const Intro = () => {
               delay={0.1}
             >
               CS @ Carleton & Full-Stack Development
-            </FadeUpWord>
+            </FadeUpWord>{" "}
           </div>
-          <div className="flex flex-col xl:flex-row justify-center items-center gap-4">
-            <Link href="https://github.com/henrylee746">
-              <ShimmerButton className="shadow-2xl flex gap-1.5 items-center">
-                <span className="text-xs sm:text-md md:text-lg">GitHub</span>{" "}
-                <FaGithub />
-              </ShimmerButton>
-            </Link>
-            <Link href="https://icy-morning-122.linkyhost.com">
-              <ShimmerButton className="shadow-2xl flex gap-1.5 items-center">
-                <span className="text-xs sm:text-md md:text-lg">Resume</span>{" "}
-                <IoIosPaper />
-              </ShimmerButton>
-            </Link>
-            <Link href="https://www.linkedin.com/in/hlee750/">
-              <ShimmerButton className="shadow-2xl flex gap-1.5 items-center">
-                <span className="text-xs sm:text-md md:text-lg">LinkedIn</span>{" "}
-                <FaLinkedin />
-              </ShimmerButton>
-            </Link>
-          </div>
+          <SocialLinksDock />
         </div>
       </div>
       <div className="flex flex-col lg:flex-row items-center justify-center gap-4">
