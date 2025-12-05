@@ -8,6 +8,7 @@ import Link from "next/link";
 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { IoIosPaper } from "react-icons/io";
+import { TextGenerateEffectDock } from "./TextGenerate";
 
 const Intro = () => {
   return (
@@ -47,9 +48,8 @@ const Intro = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-2">
-        <span className="max-w-lg text-lg leading-8 font-bold"></span>
-        I enjoy working with:
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-4">
+        <TextGenerateEffectDock />
         <TechStackDock />
       </div>
     </>

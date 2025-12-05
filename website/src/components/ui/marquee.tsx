@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
+import { usePageInView } from "motion/react";
 
 export function Marquee({
   children,
@@ -17,24 +17,7 @@ export function Marquee({
   duration?: number;
   className?: string;
 } & React.HTMLAttributes<HTMLDivElement>) {
-  const [isPageFocused, setIsPageFocused] = useState(true);
-
-  // Track page visibility (tab focus)
-  useEffect(() => {
-    const handleVisibilityChange = () => {
-      setIsPageFocused(!document.hidden);
-    };
-
-    // Check initial state
-    setIsPageFocused(!document.hidden);
-
-    // Listen for visibility changes
-    document.addEventListener("visibilitychange", handleVisibilityChange);
-
-    return () => {
-      document.removeEventListener("visibilitychange", handleVisibilityChange);
-    };
-  }, []);
+  const isInView = usePageInView();
 
   return (
     <div
@@ -54,7 +37,7 @@ export function Marquee({
               "animate-marquee-left": direction === "left",
               "animate-marquee-right": direction === "right",
               "group-hover:[animation-play-state:paused]": true,
-              "[animation-play-state:paused]": !isPageFocused,
+              "[animation-play-state:paused]": !isInView,
             })}
           >
             {children}

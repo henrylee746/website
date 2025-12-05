@@ -42,7 +42,7 @@ export const AnimatedSpan = ({
 }: AnimatedSpanProps) => {
   const elementRef = useRef<HTMLDivElement | null>(null);
   const isInView = useInView(elementRef as React.RefObject<Element>, {
-    amount: 0.3,
+    amount: 0.5,
     once: true,
   });
 
