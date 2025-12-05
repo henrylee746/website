@@ -20,13 +20,14 @@ export function ContactTerminal() {
       <AnimatedSpan className="text-blue-500">
         <span>ℹ This project was created using:</span>
         <span className="pl-2">- Next.js/TypeScript</span>
-        <span className="pl-2">- BadtzUI</span>
-        <span className="pl-2">- MagicUI</span>
-        <span className="pl-2">- KiboUI</span>
-
-        <span className="pl-2">- React-Icons</span>
-        <span className="pl-2">- Simple-Icons</span>
         <span className="pl-2">- TailwindCSS</span>
+
+        <span className="pl-2">- Framer - Motion UI</span>
+        <span className="pl-2">- ShadCN UI</span>
+        <span className="pl-2">- Radix UI</span>
+        <span className="pl-2">- Tanstack Table</span>
+
+        <span className="pl-2">- React-Icons, Simple-Icons & Lucide-React</span>
       </AnimatedSpan>
       <TypingAnimation className="text-muted-foreground">
         Success! You've reached the end.
