@@ -11,7 +11,7 @@ export function ContactTerminal() {
         &gt; Thanks for stopping by. Want to reach out? You can find me at:
       </TypingAnimation>
       <AnimatedSpan className="text-green-500">
-        ✔ Email: henrylee3@cmail.carleton.ca
+        ✔ Email: henry.lee746@gmail.com
       </AnimatedSpan>
       <AnimatedSpan className="text-green-500">
         ✔ LinkedIn: https://www.linkedin.com/in/hlee750/

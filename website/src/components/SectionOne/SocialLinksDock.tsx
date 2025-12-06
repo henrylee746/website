@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
@@ -14,41 +14,33 @@ import { Dock, DockIcon } from "@/components/ui/dock";
 /*Icons*/
 import { FaLinkedinIn } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
-import { IoDocumentText } from "react-icons/io5";
+import { HiOutlineMail } from "react-icons/hi";
+import { LuCheck } from "react-icons/lu";
 
-export type IconProps = React.HTMLAttributes<SVGElement>;
-
-const Icons = {
-  github: (props: IconProps) => (
-    <FiGithub className="size-6 sm:size-7 xl:size-8" />
-  ),
-  resume: (props: IconProps) => (
-    <IoDocumentText className="size-6 sm:size-7 xl:size-8" />
-  ),
-  linkedin: (props: IconProps) => (
-    <FaLinkedinIn className="size-6 sm:size-7 xl:size-8" />
-  ),
-};
+const EMAIL = "henry.lee746@gmail.com";
 
 const DATA = [
   {
-    icon: Icons.github,
+    icon: () => <FiGithub className="size-6 sm:size-7 xl:size-8" />,
     name: "GitHub",
     href: "https://github.com/henrylee746",
   },
   {
-    icon: Icons.resume,
-    name: "Resume",
-    href: "https://rough-butterfly-677.linkyhost.com",
-  },
-  {
-    icon: Icons.linkedin,
+    icon: () => <FaLinkedinIn className="size-6 sm:size-7 xl:size-8" />,
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/hlee750/",
   },
 ];
 
 export default function SocialLinksDock() {
+  const [copied, setCopied] = useState(false);
+
+  const copyEmail = async () => {
+    await navigator.clipboard.writeText(EMAIL);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 3000);
+  };
+
   return (
     <div className="flex items-center justify-center">
       <TooltipProvider>
@@ -69,7 +61,7 @@ export default function SocialLinksDock() {
                       "size-14 rounded-full"
                     )}
                   >
-                    <item.icon className="size-12" />
+                    <item.icon />
                   </Link>
                 </TooltipTrigger>
                 <TooltipContent>
@@ -78,6 +70,31 @@ export default function SocialLinksDock() {
               </Tooltip>
             </DockIcon>
           ))}
+
+          {/* Copy Email Button */}
+          <DockIcon>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <button
+                  onClick={copyEmail}
+                  aria-label="Copy email"
+                  className={cn(
+                    buttonVariants({ variant: "ghost", size: "icon-lg" }),
+                    "size-14 rounded-full"
+                  )}
+                >
+                  {copied ? (
+                    <LuCheck className="size-6 sm:size-7 xl:size-8 text-green-500" />
+                  ) : (
+                    <HiOutlineMail className="size-6 sm:size-7 xl:size-8" />
+                  )}
+                </button>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>{copied ? "Copied!" : "Copy Email"}</p>
+              </TooltipContent>
+            </Tooltip>
+          </DockIcon>
         </Dock>
       </TooltipProvider>
     </div>
