@@ -6,7 +6,6 @@ import {
   Particles as TSParticles,
 } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
-import { usePageInView } from "motion/react";
 import { cn } from "@/lib/utils";
 
 type ParticleVariant = "default" | "snow" | "stars";
