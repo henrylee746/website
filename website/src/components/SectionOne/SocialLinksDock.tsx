@@ -63,7 +63,7 @@ export default function SocialLinksDock() {
                       "size-14 rounded-full"
                     )}
                   >
-                    <item.icon className="size-8" />
+                    <item.icon className="size-12" />
                   </Link>
                 </TooltipTrigger>
                 <TooltipContent>

@@ -32,14 +32,14 @@ const variantStyles: Record<
   ParticleStyle & { options?: Record<string, unknown> }
 > = {
   default: {
-    count: 200,
+    count: 100,
     size: 2,
     speed: 1.5,
     opacity: 0.8,
     color: "#FFFFFF",
   },
   snow: {
-    count: 300,
+    count: 100,
     size: 1.2,
     speed: 1,
     opacity: 0.6,

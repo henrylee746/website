@@ -33,12 +33,15 @@ export function Marquee({
         .map((_, i) => (
           <div
             key={i}
-            className={cn("flex shrink-0 justify-around [gap:var(--gap)]", {
-              "animate-marquee-left": direction === "left",
-              "animate-marquee-right": direction === "right",
-              "group-hover:[animation-play-state:paused]": true,
-              "[animation-play-state:paused]": !isInView,
-            })}
+            className={cn(
+              "will-change-transform flex shrink-0 justify-around [gap:var(--gap)]",
+              {
+                "animate-marquee-left": direction === "left",
+                "animate-marquee-right": direction === "right",
+                "group-hover:[animation-play-state:paused]": true,
+                "[animation-play-state:paused]": !isInView,
+              }
+            )}
           >
             {children}
           </div>
