@@ -163,7 +163,7 @@ export function ExpandableCard({
           className
         )}
       >
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col w-full gap-4">
           <motion.div
             layoutId={`image-${title}-${id}`}
             className="relative h-72 w-full"
