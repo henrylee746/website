@@ -145,7 +145,7 @@ export function Particles({
 
   const defaultOptions = {
     detectRetina: true,
-    fpsLimit: 120,
+    fpsLimit: 60,
     interactivity: {
       detectOn: "canvas",
       events: {
