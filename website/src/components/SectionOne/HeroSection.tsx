@@ -1,5 +1,6 @@
 import TechStackDock from "@/components/SectionOne/TechStackDock";
 import { TextAnimate } from "@/components/ui/text-animate";
+import { BackgroundLines } from "@/components/ui/background-lines";
 
 export const HeroSection = () => {
   return (
@@ -7,9 +8,11 @@ export const HeroSection = () => {
       <div className="max-w-7xl mx-auto px-8 pt-8 pb-12">
         <div className="flex justify-center mb-6">
           <div className="inline-flex items-center gap-2 border border-slate-200 dark:border-slate-700 rounded-full px-3 py-1 text-xs sm:text-sm font-medium hover:bg-slate-100/80 dark:hover:bg-slate-800/80 transition-colors">
-            <span className="text-slate-600 dark:text-slate-300 inline">
-              Happy Holidays!
-            </span>
+            <BackgroundLines svgOptions={{ duration: 4 }}>
+              <span className="text-slate-600 dark:text-slate-300 inline">
+                Happy Holidays!
+              </span>
+            </BackgroundLines>
           </div>
         </div>
 
