@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 //768 covers Ipads and below
-export default function useIsMobile(breakpoint = 768): boolean | null {
+export function useIsMobile(breakpoint = 768): boolean | null {
   // Avoid hydration mismatch: null until mounted, then boolean
   const [isMobile, setIsMobile] = useState<boolean | null>(null);
 

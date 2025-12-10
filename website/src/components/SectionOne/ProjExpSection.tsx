@@ -3,7 +3,7 @@
 import { ProjectCards } from "@/components/SectionOne/Projects";
 import { FadeUpWord } from "@/components/ui/fade-up-word";
 import { WorkList } from "@/components/SectionOne/WorkList";
-import useIsMobile from "@/components/mobile";
+import { useIsMobile } from "@/components/mobile";
 
 const ProjExpSection = () => {
   const isMobile = useIsMobile();
@@ -23,7 +23,7 @@ const ProjExpSection = () => {
             className="text-md font-medium leading-10 tracking-tight text-black dark:text-zinc-50 flex justify-center"
             delay={0.2}
           >
-            Hold down a card to stop and read it.
+            Hold down/tap a card to stop and read it.
           </FadeUpWord>
         ) : null}
         <WorkList />

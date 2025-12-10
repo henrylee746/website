@@ -1,9 +1,13 @@
+"use client";
+
 import { ContactTerminal } from "./Terminal";
 import { BorderBeam } from "@/components/ui/border-beam";
 import { FadeUpWord } from "@/components/ui/fade-up-word";
+import { useIsMobile } from "../mobile";
 import { Meteors } from "@/components/ui/meteors";
 
 const Contact = () => {
+  const isMobile = useIsMobile();
   return (
     <>
       <div className="relative overflow-hidden rounded-lg shadow-sm m-8">
@@ -26,6 +30,7 @@ const Contact = () => {
       </div>
       <div className="relative p-4 h-[400px] flex justify-center items-center w-full overflow-hidden rounded-lg">
         <ContactTerminal />
+        {isMobile ? null : <Meteors />}
       </div>
     </>
   );
