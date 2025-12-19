@@ -20,7 +20,7 @@ const items = [
     title: "Frontend Developer Intern",
     image: "/kinaxis.jpg",
     body: `TypeScript, Unit/E2E Testing, CSS, REST APIs`,
-    startAt: "2026-01-12",
+    startAt: "2026-01-13",
     endAt: "N/A",
   },
   {
@@ -38,7 +38,7 @@ const items = [
     body: ` 
    ServiceNow, Azure DevOps, HTML/CSS, JavaScript, Git, Agile`,
     startAt: "2025-09-15",
-    endAt: "Present",
+    endAt: "2025-12-20",
   },
   {
     name: "Ericsson Canada",
@@ -47,16 +47,16 @@ const items = [
     body: `
  React/JavaScript, Python, Node.js, Express, shadcn-ui/TailwindCSS   
     `,
-    startAt: "2024-09-03",
-    endAt: "2025-05-21",
+    startAt: "2024-09-04",
+    endAt: "2025-05-22",
   },
   {
     name: "House of Commons of Canada - Accreditation Team",
     title: "Student Developer Co-Op",
     image: "/hoc.jpg",
     body: `ServiceNow, Azure DevOps, HTML/CSS, JavaScript, Git, Agile`,
-    startAt: "2024-01-08",
-    endAt: "2024-04-26",
+    startAt: "2024-01-09",
+    endAt: "2024-04-27",
   },
   {
     name: "Carleton University",
@@ -64,16 +64,16 @@ const items = [
     image: "/carleton.jpg",
     body: ` 
    Calculus Concepts, Communication, Leadership`,
-    startAt: "2023-09-04",
-    endAt: "2023-12-15",
+    startAt: "2023-09-05",
+    endAt: "2023-12-16",
   },
   {
     name: "incubator13 - Coding Workshop Leader Intern",
     title: "Coding Workshop Leader Intern",
     image: "/incubator.jpg",
     body: `HTML, JavaScript, Python`,
-    startAt: "2023-05-21",
-    endAt: "2023-09-04",
+    startAt: "2023-05-22",
+    endAt: "2023-09-05",
   },
 ];
 
