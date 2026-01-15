@@ -19,13 +19,13 @@ const items = [
     name: "Kinaxis",
     title: "Frontend Developer Intern",
     image: "/kinaxis.jpg",
-    body: `TypeScript, React, CSS, REST APIs`,
+    body: `React/TypeScript, Playwright, Jest, Jira/BitBucket`,
     startAt: "2026-01-13",
     endAt: "Present",
   },
   {
     name: "Carleton Blueprint",
-    title: "Tech Lead Developer",
+    title: "Lead Web Developer",
     image: "/cublueprint.jpg",
     body: `Next.js/TypeScript, Strapi, BetterAuth.js, GraphQL, GitHub Projects`,
     startAt: "2025-10-01",
@@ -41,7 +41,7 @@ const items = [
     endAt: "2025-12-20",
   },
   {
-    name: "Ericsson Canada",
+    name: "Ericsson",
     title: "Software Developer Intern",
     image: "/ericsson.jpg",
     body: `

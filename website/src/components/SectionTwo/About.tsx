@@ -8,7 +8,6 @@ import WorkExpTable from "./Table";
 import { Highlighter } from "@/components/ui/highlighter";
 import { Separator } from "@/components/ui/separator";
 
-import Link from "next/link";
 import { ResumeLinkPreview } from "./ResumeLinkPreview";
 
 const About = () => {
@@ -46,8 +45,7 @@ const About = () => {
           delay={0.3}
           className="flex gap-3 text-2xl font-semibold p-4 text-center"
         >
-          🏫 Education: Honours Bachelor of Computer Science @ Carleton
-          University (Sep. 2022 - June 2027 expt.)
+          🏫 Education: Honours B.Sc @ Carleton University (2022-2027 Expected)
         </BlurReveal>
         <Separator orientation="horizontal" className="w-[75%]" />
 
