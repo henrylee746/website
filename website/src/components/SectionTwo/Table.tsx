@@ -33,10 +33,10 @@ const items = [
   },
   {
     name: "House of Commons of Canada - MOP Team",
-    title: "Student Developer Co-Op",
+    title: "Software Developer Co-Op",
     image: "/hoc.jpg",
     body: ` 
-   ServiceNow, Azure DevOps, HTML/CSS, JavaScript, Git, Agile`,
+   ServiceNow, Azure DevOps, JavaScript, HTML/CSS, Git, Agile`,
     startAt: "2025-09-15",
     endAt: "2025-12-20",
   },
@@ -45,16 +45,16 @@ const items = [
     title: "Software Developer Intern",
     image: "/ericsson.jpg",
     body: `
- React/JavaScript, Python, Node.js, Express, shadcn-ui/TailwindCSS   
+  React/JavaScript, Python, Node.js, Express, shadcnUI/TailwindCSS   
     `,
     startAt: "2024-09-04",
     endAt: "2025-05-22",
   },
   {
     name: "House of Commons of Canada - Accreditation Team",
-    title: "Student Developer Co-Op",
+    title: "Software Developer Co-Op",
     image: "/hoc.jpg",
-    body: `ServiceNow, Azure DevOps, HTML/CSS, JavaScript, Git, Agile`,
+    body: `ServiceNow, Azure DevOps, JavaScript, HTML/CSS, Git, Agile`,
     startAt: "2024-01-09",
     endAt: "2024-04-27",
   },
@@ -63,7 +63,7 @@ const items = [
     title: "Undergrad Teaching Assistant",
     image: "/carleton.jpg",
     body: ` 
-   Calculus Concepts, Communication, Leadership`,
+   Calculus Concepts (Math 1007)`,
     startAt: "2023-09-05",
     endAt: "2023-12-16",
   },
