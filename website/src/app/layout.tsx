@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Particles } from "@/components/ui/particles";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const geistSans = Geist({
@@ -38,7 +37,6 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
-          <Particles variant="default" />
         </ThemeProvider>
       </body>
     </html>

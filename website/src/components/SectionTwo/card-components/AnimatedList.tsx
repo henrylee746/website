@@ -12,7 +12,7 @@ interface Item {
 let tools = [
   {
     name: "Deployments",
-    description: "Vercel, Render, Azure DevOps CI/CD Pipelines",
+    description: "Vercel, Render, Azure Pipelines, Jenkins",
     icon: "⬇️",
     color: "#00C9A7",
   },
@@ -24,7 +24,7 @@ let tools = [
   },
   {
     name: "Project Management",
-    description: "Jira, Azure DevOps, GitHub Projects",
+    description: "Jira, Azure Boards, GitHub Projects",
     icon: "💬",
     color: "#FF3D71",
   },
@@ -36,7 +36,7 @@ let tools = [
   },
   {
     name: "Testing",
-    description: "Vitest, RTL, Playwright",
+    description: "Jest/RTL/Playwright",
     icon: "👓",
     color: "#1E86FF",
   },

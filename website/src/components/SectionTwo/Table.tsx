@@ -16,10 +16,18 @@ import { ChevronRightIcon } from "lucide-react";
 
 const items = [
   {
+    name: "Nokia",
+    title: "Incoming Web Developer Intern",
+    image: "/nokia.jpg",
+    body: `React, TypeScript, Jest, PostgreSQL`,
+    startAt: "2026-05-04",
+    endAt: "N/A",
+  },
+  {
     name: "Kinaxis",
     title: "Frontend Developer Intern",
     image: "/kinaxis.jpg",
-    body: `React/TypeScript, Playwright, Jest, Jira/BitBucket`,
+    body: `React/TypeScript, Playwright, Jest, Jira/BitBucket, Material UI`,
     startAt: "2026-01-13",
     endAt: "Present",
   },
@@ -27,8 +35,8 @@ const items = [
     name: "Carleton Blueprint",
     title: "Lead Web Developer",
     image: "/cublueprint.jpg",
-    body: `Next.js/TypeScript, Strapi, GraphQL, GitHub Projects`,
-    startAt: "2025-10-01",
+    body: `Next.js/TypeScript, PrismaORM, Strapi, Stripe, TailwindCSS, GraphQL`,
+    startAt: "2025-10-02",
     endAt: "Present",
   },
   {
@@ -45,7 +53,7 @@ const items = [
     title: "Software Developer Intern",
     image: "/ericsson.jpg",
     body: `
-  React/JavaScript, Python, Node.js, Express, shadcnUI/TailwindCSS   
+  React/JavaScript, Node.js/Express.js, TailwindCSS   
     `,
     startAt: "2024-09-04",
     endAt: "2025-05-22",

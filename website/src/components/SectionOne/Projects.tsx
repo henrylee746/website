@@ -18,7 +18,7 @@ const TMDProject = ({ isDark }: { isDark: boolean }) => {
     <ExpandableCard
       title="Team Metrics Dashboard"
       src={isDark ? "/tmdDark.png" : "/tmdLight.png"}
-      description="React/TypeScript, Supabase, Node.js/Express, TailwindCSS, shadcnUI"
+      description="React.js, Supabase, Node.js/Express, shadcnUI"
       classNameExpanded="[&_h4]:text-black dark:[&_h4]:text-white [&_h4]:font-medium"
     >
       <Link href="https://github.com/henrylee746/team-metrics-dashboard">
@@ -63,12 +63,12 @@ const TMDProject = ({ isDark }: { isDark: boolean }) => {
   );
 };
 
-const HealthAndFitnessProject = () => {
+const HealthAndFitnessProject = ({ isDark }: { isDark: boolean }) => {
   return (
     <ExpandableCard
-      title="Health and Fitness Management Tool"
-      src="/fitness.png"
-      description="Next.js/TypeScript, PrismaORM, shadcnUI, Tanstack Table"
+      title="Health and Fitness Club Management System"
+      src={isDark ? "/fitnessDark.png" : "/fitnessLight.png"}
+      description="Next.js/TypeScript, TailwindCSS, PrismaORM, BetterAuth"
       classNameExpanded="[&_h4]:text-black dark:[&_h4]:text-white [&_h4]:font-medium"
     >
       <Link href="https://github.com/henrylee746/COMP3005FP">
@@ -114,7 +114,7 @@ export function ProjectCards() {
     "
     >
       <TMDProject isDark={isDark} />
-      <HealthAndFitnessProject />
+      <HealthAndFitnessProject isDark={isDark} />
     </div>
   );
 }
