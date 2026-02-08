@@ -1,8 +1,7 @@
 "use client";
-import React from "react";
 import Threads from "../ui/threads";
 
-export const ThreadsBackground = React.memo(() => {
+export const ThreadsBackground = () => {
     return (
         <div className="absolute inset-0">
             <Threads
@@ -12,6 +11,4 @@ export const ThreadsBackground = React.memo(() => {
             />
         </div>
     );
-});
-
-ThreadsBackground.displayName = "ThreadsBackground";
+};

@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import React from "react";
 import { Renderer, Program, Mesh, Triangle, Color } from "ogl";
 
 const vertexShader = `
@@ -232,4 +233,5 @@ const Threads = ({
   );
 };
 
-export default Threads;
+// Memoize to prevent re-initialization when parent re-renders
+export default React.memo(Threads);
