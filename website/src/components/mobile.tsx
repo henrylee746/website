@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 
-//768 covers Ipads and below
+//Custom hook to check if the user is on a mobile screen size
+//768 covers iPads and below
 export function useIsMobile(breakpoint = 768): boolean {
   const [isMobile, setIsMobile] = useState<boolean>(false);
   useEffect(() => {

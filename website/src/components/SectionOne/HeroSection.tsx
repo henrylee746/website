@@ -1,18 +1,12 @@
-"use client";
 import TechStackDock from "@/components/SectionOne/TechStackDock";
 import { TextAnimate } from "@/components/ui/text-animate";
-import Threads from '@/components/Threads';
+import { ThreadsBackground } from "@/components/SectionOne/Thread";
 
 export const HeroSection = () => {
   return (
     <div className="relative w-screen">
-      <div className="absolute inset-0">
-        <Threads
-          amplitude={5}
-          distance={0.6}
-          enableMouseInteraction={false}
-        />
-      </div>
+      {/* Memoize the Threads component to prevent re-initialization */}
+      <ThreadsBackground />
       {/* Content - positioned above the threads */}
       <div className="relative z-10 max-w-7xl mx-auto px-8 pt-8 pb-12">
         <div className="text-center">
